@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tracker Test</title>
+    <!--script src="https://aicsintelligence.netlify.app/tracker.js"></script> -->
+    <script src="tracker.js"></script>
+    <script>
+      window.onload = function () {
+        Tracker.init({ userId: "test_user", accountId: "test_account" });
+        Tracker.track("test_event", { feature: "basic_test" });
+        console.log("Test event sent!");
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Tracker Test Page</h1>
+    <p>Check your backend logs for the test event.</p>
+  </body>
+</html>
